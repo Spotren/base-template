@@ -1,0 +1,19 @@
+---
+import { loadSiteData } from "../lib/load-site-data";
+
+const site = loadSiteData();
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>{site.title}</title>
+  </head>
+  <body>
+    <main>
+      <h1>{site.title}</h1>
+    </main>
+  </body>
+</html>
