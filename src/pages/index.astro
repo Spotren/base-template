@@ -10,6 +10,7 @@ const site = loadSiteData();
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>{site.title}</title>
+    <link href={site.faviconHref ?? "/favicon.ico"} rel="icon" type={site.faviconContentType ?? "image/x-icon"} />
   </head>
   <body>
     <main>
